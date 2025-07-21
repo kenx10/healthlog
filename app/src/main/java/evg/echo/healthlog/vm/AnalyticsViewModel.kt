@@ -4,24 +4,24 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import evg.echo.healthlog.services.MeasureService
-import evg.echo.healthlog.util.DateAnalyticContainer
 import evg.echo.healthlog.util.splitByDateStr
 import kotlinx.coroutines.launch
 
 class AnalyticsViewModel(
     private val measureService: MeasureService
 ) : ViewModel() {
-    private val _items = mutableStateListOf<DateAnalyticContainer>()
-    val analytics: List<DateAnalyticContainer> get() = _items
+    val migDT = mutableStateListOf<Long>()
+    val mig = mutableStateListOf<Int>()
+
+    val panDT = mutableStateListOf<Long>()
+    val pan = mutableStateListOf<Int>()
 
     val presDT = mutableStateListOf<Long>()
     val presL = mutableStateListOf<Int>()
     val presDif = mutableStateListOf<Int>()
 
-    private val _sugDT = mutableStateListOf<Long>()
-    val sugDT: List<Long> get() = _sugDT
-    private val _sug = mutableStateListOf<Float>()
-    val sug: List<Float> get() = _sug
+    val sugDT = mutableStateListOf<Long>()
+    val sug = mutableStateListOf<Float>()
 
     init {
         viewModelScope.launch {
@@ -43,25 +43,31 @@ class AnalyticsViewModel(
                         panPoint += it.durationMin
                     }
 
-                    _items.add(
-                        DateAnalyticContainer(
-                            dayMS, migPoint, panPoint
-                        )
-                    )
+                    if (0 < migPoint) {
+                        migDT.add(dayMS)
+                        mig.add(migPoint)
+                    }
+
+                    if (0 < panPoint) {
+                        migDT.add(dayMS)
+                        mig.add(panPoint)
+                    }
                 }
 
             mc.sugars
                 .sortedBy { it.timestamp }
                 .forEach {
-                    _sugDT.add(it.timestamp)
-                    _sug.add(it.value)
+                    sugDT.add(it.timestamp)
+                    sug.add(it.value)
                 }
 
-            mc.pressures.forEach {
-                presDT.add(it.timestamp)
-                presL.add(it.low)
-                presDif.add(it.high - it.low)
-            }
+            mc.pressures
+                .sortedBy { it.timestamp }
+                .forEach {
+                    presDT.add(it.timestamp)
+                    presL.add(it.low)
+                    presDif.add(it.high - it.low)
+                }
         }
     }
 }

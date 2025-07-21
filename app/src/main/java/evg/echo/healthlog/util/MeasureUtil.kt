@@ -21,13 +21,6 @@ class DateMeasureContainer(
     val panics: MutableList<Panic> = mutableListOf()
 )
 
-class DateAnalyticContainer(
-    val dateEpocMs: Long,
-    val migraines: Int,
-    val panics: Int
-)
-
-
 fun splitByDateStr(
     mc: MeasureContainer
 ): List<DateMeasureContainer> {
