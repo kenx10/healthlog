@@ -139,7 +139,7 @@ fun PersonalizationScreen(
                         )
 
 
-                        OutlinedTextField(
+                        /*OutlinedTextField(
                             value = email ?: "",
                             onValueChange = {
                                 emailError = it.isNotBlank() && !emailRegex.matches(it)
@@ -158,7 +158,7 @@ fun PersonalizationScreen(
                                 .fillMaxWidth()
                                 .padding(bottom = 16.dp),
                             shape = RoundedCornerShape(12.dp)
-                        )
+                        )*/
 
                         GenderSelectorWithIcons(
                             gender = gender,
