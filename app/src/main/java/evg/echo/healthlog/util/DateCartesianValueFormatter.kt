@@ -16,6 +16,9 @@ val dateFormat: DateTimeFormatter = DateTimeFormatter.ofPattern("dd.MM")
 @OptIn(FormatStringsInDatetimeFormats::class)
 val dateTimeFormat: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm dd.MM")
 
+@OptIn(FormatStringsInDatetimeFormats::class)
+val dateTimeFileFormat: DateTimeFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")
+
 
 fun toDateFormat(mills: Long): String {
     val instant = Instant.ofEpochMilli(mills)
@@ -25,6 +28,11 @@ fun toDateFormat(mills: Long): String {
 fun toDateTimeFormat(mills: Long): String {
     val instant = Instant.ofEpochMilli(mills)
     return dateTimeFormat.format(LocalDateTime.ofInstant(instant, ZoneId.systemDefault()))
+}
+
+fun toDateTimeFileFormat(mills: Long): String {
+    val instant = Instant.ofEpochMilli(mills)
+    return dateTimeFileFormat.format(LocalDateTime.ofInstant(instant, ZoneId.systemDefault()))
 }
 
 class DecimalExtCartesianValueFormatter(

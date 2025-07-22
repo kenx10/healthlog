@@ -1,5 +1,6 @@
 package evg.echo.healthlog.vm
 
+import android.content.Context
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
@@ -8,6 +9,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import evg.echo.healthlog.services.MeasureService
 import evg.echo.healthlog.util.DateMeasureContainer
+import evg.echo.healthlog.util.MeasureContainer
+import evg.echo.healthlog.util.sendData
 import evg.echo.healthlog.util.splitByDateStr
 import kotlinx.coroutines.launch
 
@@ -52,4 +55,12 @@ class HistoryViewModel(
         }
     }
 
+    /***************************************/
+
+    fun sendLastYearData(context: Context) {
+        viewModelScope.launch {
+            val container = measureService.getByDaysBefore(365, 0)
+            sendData(context, container)
+        }
+    }
 }
