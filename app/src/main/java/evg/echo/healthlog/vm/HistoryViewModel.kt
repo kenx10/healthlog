@@ -9,7 +9,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import evg.echo.healthlog.services.MeasureService
 import evg.echo.healthlog.util.DateMeasureContainer
-import evg.echo.healthlog.util.MeasureContainer
 import evg.echo.healthlog.util.sendData
 import evg.echo.healthlog.util.splitByDateStr
 import kotlinx.coroutines.launch

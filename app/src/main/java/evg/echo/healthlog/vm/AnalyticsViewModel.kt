@@ -33,7 +33,7 @@ class AnalyticsViewModel(
                 .forEach {
                     val dayMS = it.date.toEpochDay() * 24 * 3600 * 1000L
 
-                    var migPoint = 0;
+                    var migPoint = 0
                     it.migraines.forEach {
                         migPoint += it.calcMigPoint()
                     }

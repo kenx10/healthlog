@@ -26,7 +26,6 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import evg.echo.healthlog.R
 import evg.echo.healthlog.data.dateFormat
-import evg.echo.healthlog.ui.components.Routes
 import evg.echo.healthlog.ui.components.widgets.AppBar
 import evg.echo.healthlog.ui.components.widgets.cards.DayCard
 import evg.echo.healthlog.vm.HistoryViewModel
