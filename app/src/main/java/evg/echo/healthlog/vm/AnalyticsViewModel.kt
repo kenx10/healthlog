@@ -49,8 +49,8 @@ class AnalyticsViewModel(
                     }
 
                     if (0 < panPoint) {
-                        migDT.add(dayMS)
-                        mig.add(panPoint)
+                        panDT.add(dayMS)
+                        pan.add(panPoint)
                     }
                 }
 
