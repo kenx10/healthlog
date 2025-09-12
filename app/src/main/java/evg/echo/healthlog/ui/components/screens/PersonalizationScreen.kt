@@ -68,9 +68,11 @@ fun PersonalizationScreen(
             var dateInMillis by personalizationViewModel.dateInMillis
 
             var emailError by remember { mutableStateOf(false) }
-            /* val emailRegex = remember {
+            /*
+            val emailRegex = remember {
                  Regex("^[A-Za-z0-9+_.-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,}\$")
-             }*/
+            }
+            */
 
             Column(
                 modifier = Modifier
