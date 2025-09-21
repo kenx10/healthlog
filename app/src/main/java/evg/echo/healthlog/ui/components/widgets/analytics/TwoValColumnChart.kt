@@ -5,6 +5,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.patrykandpatrick.vico.compose.cartesian.CartesianChartHost
 import com.patrykandpatrick.vico.compose.cartesian.axis.rememberBottom
@@ -28,6 +29,7 @@ import com.patrykandpatrick.vico.core.cartesian.layer.ColumnCartesianLayer
 import com.patrykandpatrick.vico.core.common.LegendItem
 import com.patrykandpatrick.vico.core.common.data.ExtraStore
 import com.patrykandpatrick.vico.core.common.shape.CorneredShape
+import evg.echo.healthlog.R
 import evg.echo.healthlog.util.DecimalExtCartesianValueFormatter
 
 private val LegendLabelKey = ExtraStore.Key<Set<String>>()
@@ -41,7 +43,7 @@ fun TwoValColumnChart(
     y2: List<Number>,
     columnColors: List<Color>,
     legendNames: Set<String>,
-    ySuff: String = "баллов"
+    ySuff: String = stringResource(R.string.analytics_unit)
 ) {
     val legendItemLabelComponent = rememberTextComponent(vicoTheme.textColor)
     val modelProducer = remember { CartesianChartModelProducer() }

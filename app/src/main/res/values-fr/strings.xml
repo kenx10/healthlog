@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Journal de Santé</string>
+    <string name="app_history">Historique</string>
+    <string name="app_analytics">Analyse</string>
+    <string name="app_settings">Paramètres</string>
+    <string name="app_about">À propos</string>
+
+    <string name="app_about_part1">Tenir un journal de santé est une étape importante vers un meilleur bien-être et une meilleure compréhension de votre corps.</string>
+    <string name="app_about_part2">Cette application est conçue précisément pour cela. Vous pouvez y suivre facilement vos migraines, votre tension artérielle, votre taux de sucre dans le sang ainsi que vos crises de panique.</string>
+    <string name="app_about_part3">Un suivi régulier aide à identifier des schémas, à mieux comprendre les réactions du corps et à partager des informations importantes avec le médecin.</string>
+
+    <string name="save">Enregistrer</string>
+    <string name="saved">Enregistré</string>
+    <string name="additional_info">Informations supplémentaires...</string>
+    <string name="duration">Durée</string>
+    <string name="sug_value_txt">Taux de sucre (glucose) dans le sang</string>
+
+    <string name="mig_reg">Enregistrement de migraine</string>
+    <string name="sug_reg">Sucre dans le sang</string>
+    <string name="pa_reg">Enregistrement de crise de panique</string>
+    <string name="pa_trig">Décrivez le déclencheur...</string>
+    <string name="pres_reg">Enregistrement de tension artérielle</string>
+    <string name="pres_up">Systolique (haute)</string>
+    <string name="pres_down">Diastolique (basse)</string>
+
+    <string name="analytics">Analyse</string>
+    <string name="analytics_unit">points</string>
+    <string name="analytics_mig">Migraines (intensité * temps)</string>
+    <string name="analytics_pan">Crises de panique (total)</string>
+    <string name="analytics_pan_unit">min.</string>
+    <string name="analytics_sug">Sucre dans le sang</string>
+    <string name="analytics_sug_unit">mmol/L</string>
+    <string name="analytics_pres">Tension artérielle</string>
+    <string name="analytics_pres_unit">mmHg</string>
+    <string name="analytics_nodata">Données insuffisantes</string>
+
+    <string name="history">Historique des observations</string>
+    <string name="migraine">migraine</string>
+    <string name="mig_weak">Légère</string>
+    <string name="mig_millde">Modérée</string>
+    <string name="mig_strong">Sévère</string>
+    <string name="mig_weak_desc">Légère (n`interfère pas avec les activités quotidiennes, inconfort perceptible)</string>
+    <string name="mig_millde_desc">Modérée (inconfort significatif, réduit la productivité)</string>
+    <string name="mig_strong_desc">Sévère (très douloureuse, paralyse l`activité)</string>
+
+    <string name="personal_info">Données personnelles</string>
+    <string name="your_name">Votre nom</string>
+    <string name="name">Nom</string>
+
+    <string name="permission_location">Inclure la localisation</string>
+    <string name="permission_location_decs">L`autorisation est nécessaire pour enregistrer les coordonnées de l`incident</string>
+    <string name="permission">Autorisation requise</string>
+    <string name="to_settings">Aller aux paramètres</string>
+    <string name="close">Fermer</string>
+
+    <string name="export_mig">Migraines</string>
+    <string name="export_pres">Pression</string>
+    <string name="export_sug">Sucre</string>
+    <string name="export_pa">Crises de panique</string>
+
+    <string name="export_dt">Date et heure</string>
+    <string name="export_intence">Intensité</string>
+    <string name="export_dur">Durée (min.)</string>
+    <string name="export_val">Valeur (mmol/L)</string>
+    <string name="export_up">Systolique (mmHg)</string>
+    <string name="export_down">Diastolique (mmHg)</string>
+    <string name="export_comment">Commentaire</string>
+
+    <string name="export_sfile">Envoyer en tant que fichier</string>
+
+</resources>

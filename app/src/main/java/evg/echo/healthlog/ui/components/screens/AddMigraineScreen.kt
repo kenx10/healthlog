@@ -30,6 +30,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
@@ -53,6 +54,8 @@ fun AddMigraineScreen(
     val commentMaxChars = 256
     val context = LocalContext.current
 
+    val savedStr = stringResource(R.string.saved)
+
     Scaffold(
         /* topBar = { AppBar(navController) } */
     ) { paddingValues ->
@@ -67,7 +70,7 @@ fun AddMigraineScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "Регистрация случая мигрени",
+                    text = stringResource(R.string.mig_reg),
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.primary,
@@ -105,7 +108,7 @@ fun AddMigraineScreen(
                             Column {
                                 if (comment.isEmpty()) {
                                     Text(
-                                        "Дополнительная информация...",
+                                        stringResource(R.string.additional_info),
                                         color = Color.Gray,
                                         style = MaterialTheme.typography.bodyLarge
                                     )
@@ -129,7 +132,7 @@ fun AddMigraineScreen(
                         }
 
                         measureService.saveMig(pain, durationValue.toInt(), comment)
-                        Toast.makeText(context, "Сохранено", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, savedStr, Toast.LENGTH_SHORT).show()
                         navController.navigate(Routes.MAIN)
                     },
                     modifier = Modifier
@@ -145,7 +148,7 @@ fun AddMigraineScreen(
                         pressedElevation = 4.dp
                     )
                 ) {
-                    Text("Записать", style = MaterialTheme.typography.labelLarge)
+                    Text(stringResource(R.string.save), style = MaterialTheme.typography.labelLarge)
                 }
             }
 

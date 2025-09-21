@@ -5,6 +5,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.patrykandpatrick.vico.compose.cartesian.CartesianChartHost
 import com.patrykandpatrick.vico.compose.cartesian.axis.rememberBottom
@@ -22,6 +23,7 @@ import com.patrykandpatrick.vico.core.cartesian.data.CartesianChartModelProducer
 import com.patrykandpatrick.vico.core.cartesian.data.CartesianValueFormatter
 import com.patrykandpatrick.vico.core.cartesian.data.columnSeries
 import com.patrykandpatrick.vico.core.cartesian.layer.ColumnCartesianLayer
+import evg.echo.healthlog.R
 import evg.echo.healthlog.util.DecimalExtCartesianValueFormatter
 
 @Composable
@@ -31,7 +33,7 @@ fun OneValColumnChart(
     timeMillsFormatter: (Long) -> String,
     y: List<Number>,
     color: Color,
-    ySuff: String = "баллов"
+    ySuff: String = stringResource(R.string.analytics_unit)
 ) {
     val modelProducer = remember { CartesianChartModelProducer() }
     LaunchedEffect(Unit) {

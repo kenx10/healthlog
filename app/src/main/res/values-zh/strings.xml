@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">健康日记</string>
+
+    <string name="app_history">历史</string>
+    <string name="app_analytics">分析</string>
+    <string name="app_settings">设置</string>
+    <string name="app_about">关于</string>
+
+    <string name="app_about_part1">记录健康日记是更好地了解身体和改善健康状况的重要一步。</string>
+    <string name="app_about_part2">本应用就是为此而设计的。您可以方便地跟踪偏头痛、血压、血糖水平以及惊恐发作。</string>
+    <string name="app_about_part3">定期记录有助于发现规律，更好地理解身体反应，并与医生分享重要信息。</string>
+
+    <string name="save">保存</string>
+    <string name="saved">已保存</string>
+    <string name="additional_info">附加信息...</string>
+    <string name="duration">持续时间</string>
+    <string name="sug_value_txt">血糖水平</string>
+
+    <string name="mig_reg">偏头痛记录</string>
+
+    <string name="sug_reg">血糖</string>
+
+    <string name="pa_reg">惊恐发作记录</string>
+    <string name="pa_trig">描述外部触发因素...</string>
+
+    <string name="pres_reg">血压记录</string>
+    <string name="pres_up">收缩压（高压）</string>
+    <string name="pres_down">舒张压（低压）</string>
+
+    <string name="analytics">分析</string>
+    <string name="analytics_unit">分</string>
+    <string name="analytics_mig">偏头痛（强度 * 时间）</string>
+    <string name="analytics_pan">惊恐发作（总计）</string>
+    <string name="analytics_pan_unit">分钟</string>
+    <string name="analytics_sug">血糖</string>
+    <string name="analytics_sug_unit">mmol/L</string>
+    <string name="analytics_pres">血压</string>
+    <string name="analytics_pres_unit">毫米汞柱</string>
+    <string name="analytics_nodata">数据不足</string>
+
+    <string name="history">观察历史</string>
+    <string name="migraine">偏头痛</string>
+    <string name="mig_weak">轻度</string>
+    <string name="mig_millde">中度</string>
+    <string name="mig_strong">重度</string>
+    <string name="mig_weak_desc">轻度（不影响日常活动，但有不适感）</string>
+    <string name="mig_millde_desc">中度（明显不适，降低工作效率）</string>
+    <string name="mig_strong_desc">重度（极度痛苦，无法活动）</string>
+
+    <string name="personal_info">个人信息</string>
+    <string name="your_name">您的名字</string>
+    <string name="name">名字</string>
+
+    <string name="permission_location">使用位置</string>
+    <string name="permission_location_decs">需要权限来记录事件的坐标</string>
+    <string name="permission">需要权限</string>
+    <string name="to_settings">前往设置</string>
+    <string name="close">关闭</string>
+
+    <string name="export_mig">偏头痛</string>
+    <string name="export_pres">血压</string>
+    <string name="export_sug">血糖</string>
+    <string name="export_pa">惊恐发作</string>
+
+    <string name="export_dt">日期和时间</string>
+    <string name="export_intence">强度</string>
+    <string name="export_dur">持续时间（分钟）</string>
+    <string name="export_val">数值（mmol/L）</string>
+    <string name="export_up">收缩压（毫米汞柱）</string>
+    <string name="export_down">舒张压（毫米汞柱）</string>
+    <string name="export_comment">备注</string>
+
+    <string name="export_sfile">以文件形式发送</string>
+
+</resources>

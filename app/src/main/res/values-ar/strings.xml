@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">مفكرة الصحة</string>
+
+    <string name="app_history">السجل</string>
+    <string name="app_analytics">التحليلات</string>
+    <string name="app_settings">الإعدادات</string>
+    <string name="app_about">حول التطبيق</string>
+
+    <string name="app_about_part1">تسجيل مفكرة الصحة هو خطوة مهمة نحو شعور أفضل وفهم جسمك بشكل أفضل.</string>
+    <string name="app_about_part2">تم إنشاء هذا التطبيق لهذا الغرض بالذات. يمكنك هنا متابعة الصداع النصفي، ضغط الدم، مستويات السكر في الدم، وكذلك نوبات الهلع بسهولة.</string>
+    <string name="app_about_part3">يساعد التسجيل المنتظم على اكتشاف الأنماط وفهم ردود فعل الجسم بشكل أفضل ومشاركة المعلومات المهمة مع الطبيب.</string>
+
+    <string name="save">حفظ</string>
+    <string name="saved">تم الحفظ</string>
+    <string name="additional_info">معلومات إضافية...</string>
+    <string name="duration">المدة</string>
+    <string name="sug_value_txt">مستوى السكر (الجلوكوز)</string>
+
+    <string name="mig_reg">تسجيل حالة الصداع النصفي</string>
+    <string name="sug_reg">مستوى السكر في الدم</string>
+    <string name="pa_reg">تسجيل نوبة الهلع</string>
+    <string name="pa_trig">صف العامل المثير الخارجي...</string>
+    <string name="pres_reg">تسجيل ضغط الدم</string>
+    <string name="pres_up">الضغط الانقباضي (الأعلى)</string>
+    <string name="pres_down">الضغط الانبساطي (الأدنى)</string>
+
+    <string name="analytics">التحليلات</string>
+    <string name="analytics_unit">نقاط</string>
+    <string name="analytics_mig">الصداع النصفي (الشدة * الوقت)</string>
+    <string name="analytics_pan">نوبات الهلع (الإجمالي)</string>
+    <string name="analytics_pan_unit">دقيقة</string>
+    <string name="analytics_sug">السكر</string>
+    <string name="analytics_sug_unit">ممول/لتر</string>
+    <string name="analytics_pres">ضغط الدم</string>
+    <string name="analytics_pres_unit">مم زئبق</string>
+    <string name="analytics_nodata">بيانات غير كافية</string>
+
+    <string name="history">سجل الملاحظات</string>
+    <string name="migraine">صداع نصفي</string>
+    <string name="mig_weak">خفيف</string>
+    <string name="mig_millde">متوسط</string>
+    <string name="mig_strong">شديد</string>
+    <string name="mig_weak_desc">خفيف (لا يعيق الأنشطة اليومية، شعور بعدم الراحة)</string>
+    <string name="mig_millde_desc">متوسط (إزعاج ملحوظ، يقلل الإنتاجية)</string>
+    <string name="mig_strong_desc">شديد (ألم شديد، يوقف النشاط)</string>
+
+    <string name="personal_info">المعلومات الشخصية</string>
+    <string name="your_name">اسمك</string>
+    <string name="name">الاسم</string>
+
+    <string name="permission_location">تضمين الموقع</string>
+    <string name="permission_location_decs">تتطلب الإذن لتسجيل إحداثيات الحادث</string>
+    <string name="permission">يتطلب إذن</string>
+    <string name="to_settings">إلى الإعدادات</string>
+    <string name="close">إغلاق</string>
+
+    <string name="export_mig">الصداع النصفي</string>
+    <string name="export_pres">ضغط الدم</string>
+    <string name="export_sug">السكر</string>
+    <string name="export_pa">نوبات هلع</string>
+
+    <string name="export_dt">التاريخ والوقت</string>
+    <string name="export_intence">الشدة</string>
+    <string name="export_dur">المدة (دقائق)</string>
+    <string name="export_val">القيمة (ملمول/ل)</string>
+    <string name="export_up">الضغط الانقباضي (مم زئبق)</string>
+    <string name="export_down">الضغط الانبساطي (مم زئبق)</string>
+    <string name="export_comment">تعليق</string>
+
+    <string name="export_sfile">إرسال كملف</string>
+
+</resources>

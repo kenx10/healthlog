@@ -16,7 +16,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import evg.echo.healthlog.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -35,7 +37,7 @@ fun DurationSlider(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Продолжительность: ${sliderValue.toInt()} мин.",
+            text = "${stringResource(R.string.duration)}: ${sliderValue.toInt()} ${stringResource(R.string.analytics_pan_unit)}",
             style = MaterialTheme.typography.titleMedium,
             color = MaterialTheme.colorScheme.primary,
             modifier = Modifier

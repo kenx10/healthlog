@@ -17,7 +17,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import evg.echo.healthlog.R
 
 @SuppressLint("DefaultLocale")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -38,9 +40,9 @@ fun SugarSlider(
     ) {
         Text(
             text = buildString {
-                append("Уровень сахара (глюкозы): ")
+                append("${stringResource(R.string.sug_reg)}: ")
                 append(String.format("%.1f", sliderValue))
-                append(" ммоль/л.")
+                append(" ${stringResource(R.string.analytics_sug_unit)}")
             },
             style = MaterialTheme.typography.titleMedium,
             color = MaterialTheme.colorScheme.primary,

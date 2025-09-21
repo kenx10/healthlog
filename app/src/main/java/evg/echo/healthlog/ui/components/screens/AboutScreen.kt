@@ -13,15 +13,18 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import evg.echo.healthlog.R
 import evg.echo.healthlog.ui.components.widgets.AppBar
 
 @Composable
 fun AboutScreen(navController: NavHostController) {
     Scaffold(
-        topBar = { AppBar(navController, text = "О программе") },
-        /*floatingActionButton = {
+        topBar = { AppBar(navController, text = stringResource(R.string.app_about)) },
+        /*
+        floatingActionButton = {
             FloatingActionButton(
                 modifier = Modifier.padding(2.dp),
                 onClick = {
@@ -38,7 +41,8 @@ fun AboutScreen(navController: NavHostController) {
                     contentScale = ContentScale.Crop
                 )
             }
-        }*/
+        }
+        */
     ) { paddingValues ->
 
         Box(
@@ -52,34 +56,34 @@ fun AboutScreen(navController: NavHostController) {
                     .verticalScroll(rememberScrollState())
             ) {
                 Text(
-                    "Ведение дневника здоровья — это важный шаг к лучшему самочувствию и пониманию своего организма.",
+                    stringResource(R.string.app_about_part1),
                     style = MaterialTheme.typography.bodyLarge
                 )
 
                 Spacer(Modifier.height(20.dp))
 
                 Text(
-                    "Это приложение создано как раз для этого. Здесь вы можете удобно отслеживать мигрени, уровень артериального давления, сахара в крови, а также панические атаки.",
+                    stringResource(R.string.app_about_part2),
                     style = MaterialTheme.typography.bodyLarge
                 )
 
                 Spacer(Modifier.height(20.dp))
 
                 Text(
-                    "Регулярный учет помогает выявлять закономерности, лучше понимать реакции организма и делиться важной информацией с врачом.",
+                    stringResource(R.string.app_about_part3),
                     style = MaterialTheme.typography.bodyLarge
                 )
 
                 Spacer(Modifier.height(20.dp))
 
-                /*Text(
+                /*
+                Text(
                     "Так же на этой странице вы можете угостить автора шаурмой ))",
                     style = MaterialTheme.typography.bodyLarge
                 )
 
-                Spacer(Modifier.height(50.dp))*/
-
-
+                Spacer(Modifier.height(50.dp))
+                */
             }
         }
     }

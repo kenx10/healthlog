@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Sağlık Günlüğü</string>
+
+    <string name="app_history">Geçmiş</string>
+    <string name="app_analytics">Analiz</string>
+    <string name="app_settings">Ayarlar</string>
+    <string name="app_about">Hakkında</string>
+
+    <string name="app_about_part1">Sağlık günlüğü tutmak, vücudunuzu daha iyi anlamak ve daha iyi hissetmek için önemli bir adımdır.</string>
+    <string name="app_about_part2">Bu uygulama tam da bu amaçla oluşturuldu. Burada migren, kan basıncı, kan şekeri seviyeleri ve panik atakları kolayca takip edebilirsiniz.</string>
+    <string name="app_about_part3">Düzenli kayıtlar, kalıpları fark etmenize, vücudunuzun tepkilerini daha iyi anlamanıza ve doktorunuzla önemli bilgileri paylaşmanıza yardımcı olur.</string>
+
+    <string name="save">Kaydet</string>
+    <string name="saved">Kaydedildi</string>
+    <string name="additional_info">Ek bilgi...</string>
+    <string name="duration">Süre</string>
+    <string name="sug_value_txt">Kan şekeri seviyesi</string>
+
+    <string name="mig_reg">Migren Kaydı</string>
+
+    <string name="sug_reg">Kan Şekeri</string>
+
+    <string name="pa_reg">Panik Atak Kaydı</string>
+    <string name="pa_trig">Harici tetikleyiciyi açıklayın...</string>
+
+    <string name="pres_reg">Kan Basıncı Kaydı</string>
+    <string name="pres_up">Sistolik (büyük)</string>
+    <string name="pres_down">Diyastolik (küçük)</string>
+
+    <string name="analytics">Analiz</string>
+    <string name="analytics_unit">puan</string>
+    <string name="analytics_mig">Migren (şiddet * süre)</string>
+    <string name="analytics_pan">Panik Atak (toplam)</string>
+    <string name="analytics_pan_unit">dk</string>
+    <string name="analytics_sug">Kan Şekeri</string>
+    <string name="analytics_sug_unit">mmol/L</string>
+    <string name="analytics_pres">Kan Basıncı</string>
+    <string name="analytics_pres_unit">mmHg</string>
+    <string name="analytics_nodata">Yetersiz veri</string>
+
+    <string name="history">Gözlem Geçmişi</string>
+    <string name="migraine">migren</string>
+    <string name="mig_weak">Hafif</string>
+    <string name="mig_millde">Orta</string>
+    <string name="mig_strong">Şiddetli</string>
+    <string name="mig_weak_desc">Hafif (günlük işlere engel olmaz, rahatsızlık hissedilir)</string>
+    <string name="mig_millde_desc">Orta (belirgin rahatsızlık, üretkenliği azaltır)</string>
+    <string name="mig_strong_desc">Şiddetli (çok acı verici, aktiviteleri engeller)</string>
+
+    <string name="personal_info">Kişisel Bilgiler</string>
+    <string name="your_name">Adınız</string>
+    <string name="name">Ad</string>
+
+    <string name="permission_location">Konumu kullan</string>
+    <string name="permission_location_decs">Olayın koordinatlarını kaydetmek için izin gereklidir</string>
+    <string name="permission">İzin gerekli</string>
+    <string name="to_settings">Ayarlar</string>
+    <string name="close">Kapat</string>
+
+    <string name="export_mig">Migren</string>
+    <string name="export_pres">Tansiyon</string>
+    <string name="export_sug">Şeker</string>
+    <string name="export_pa">Panik Atakları</string>
+
+    <string name="export_dt">Tarih ve Saat</string>
+    <string name="export_intence">Şiddet</string>
+    <string name="export_dur">Süre (dk)</string>
+    <string name="export_val">Değer (mmol/L)</string>
+    <string name="export_up">Sistolik (mmHg)</string>
+    <string name="export_down">Diyastolik (mmHg)</string>
+    <string name="export_comment">Yorum</string>
+
+    <string name="export_sfile">Dosya olarak gönder</string>
+
+</resources>

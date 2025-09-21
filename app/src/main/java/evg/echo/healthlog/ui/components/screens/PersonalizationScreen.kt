@@ -36,9 +36,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import evg.echo.healthlog.R
 import evg.echo.healthlog.ui.components.Routes
 import evg.echo.healthlog.ui.components.widgets.GenderSelectorWithIcons
 import evg.echo.healthlog.ui.components.widgets.GradientDatePicker
@@ -50,7 +52,7 @@ import org.koin.compose.koinInject
 @Composable
 fun PersonalizationScreen(
     navController: NavHostController,
-    personalizationViewModel: PersonalizationViewModel = koinInject<PersonalizationViewModel>()
+    personalizationViewModel: PersonalizationViewModel = koinInject<PersonalizationViewModel>(),
 ) {
     val context = LocalContext.current
 
@@ -68,6 +70,8 @@ fun PersonalizationScreen(
             var dateInMillis by personalizationViewModel.dateInMillis
 
             var emailError by remember { mutableStateOf(false) }
+
+            val savedStr = stringResource(R.string.saved)
             /*
             val emailRegex = remember {
                  Regex("^[A-Za-z0-9+_.-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,}\$")
@@ -84,7 +88,7 @@ fun PersonalizationScreen(
             ) {
 
                 Text(
-                    text = "Настройки",
+                    text = stringResource(R.string.app_settings),
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.padding(bottom = 32.dp)
@@ -108,7 +112,7 @@ fun PersonalizationScreen(
                     )
                 ) {
                     Text(
-                        text = "Персональные данные",
+                        text = stringResource(R.string.personal_info),
                         color = MaterialTheme.colorScheme.secondary,
                         fontSize = 12.sp,
                         modifier = Modifier
@@ -124,11 +128,11 @@ fun PersonalizationScreen(
                         OutlinedTextField(
                             value = name,
                             onValueChange = { name = it },
-                            label = { Text("Ваше имя") },
+                            label = { Text(stringResource(R.string.your_name)) },
                             leadingIcon = {
                                 Icon(
                                     Icons.Default.Person,
-                                    contentDescription = "Имя"
+                                    contentDescription = stringResource(R.string.name)
                                 )
                             },
                             modifier = Modifier
@@ -138,7 +142,8 @@ fun PersonalizationScreen(
                         )
 
 
-                        /*OutlinedTextField(
+                        /*
+                        OutlinedTextField(
                             value = email ?: "",
                             onValueChange = {
                                 emailError = it.isNotBlank() && !emailRegex.matches(it)
@@ -157,7 +162,8 @@ fun PersonalizationScreen(
                                 .fillMaxWidth()
                                 .padding(bottom = 16.dp),
                             shape = RoundedCornerShape(12.dp)
-                        )*/
+                        )
+                        */
 
                         GenderSelectorWithIcons(
                             gender = gender,
@@ -181,7 +187,7 @@ fun PersonalizationScreen(
 
                         personalizationViewModel.save(name, email, gender, dateInMillis)
 
-                        Toast.makeText(context, "Сохранено", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, savedStr, Toast.LENGTH_SHORT).show()
                         navController.navigate(Routes.MAIN)
                     },
                     modifier = Modifier
@@ -197,7 +203,7 @@ fun PersonalizationScreen(
                         pressedElevation = 4.dp
                     )
                 ) {
-                    Text("Сохранить", style = MaterialTheme.typography.labelLarge)
+                    Text(stringResource(R.string.save), style = MaterialTheme.typography.labelLarge)
                 }
             }
         }

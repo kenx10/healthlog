@@ -18,10 +18,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import evg.echo.healthlog.R
 import evg.echo.healthlog.model.ent.Sugar
 
 @SuppressLint("DefaultLocale")
@@ -66,7 +68,7 @@ fun SugarCard(
                     )
                     Spacer(Modifier.height(4.dp))
                     Text(
-                        text = "Уровень сахара\n(ммоль/л)",
+                        text = "${stringResource(R.string.analytics_sug)}\n(${stringResource(R.string.analytics_sug_unit)})",
                         fontSize = 12.sp,
                         textAlign = TextAlign.Center
                     )

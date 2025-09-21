@@ -23,6 +23,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -63,17 +64,17 @@ fun MigraineCard(
 
             when (migraine.value) {
                 1 -> {
-                    text = "Слабая"
+                    text = stringResource(R.string.mig_weak)
                     resId = R.mipmap.mig_low
                 }
 
                 2 -> {
-                    text = "Средняя"
+                    text = stringResource(R.string.mig_millde)
                     resId = R.mipmap.mig_middle
                 }
 
                 3 -> {
-                    text = "Сильная"
+                    text = stringResource(R.string.mig_strong)
                     resId = R.mipmap.mig_high
                 }
             }
@@ -108,10 +109,10 @@ fun MigraineCard(
                     )
                     Spacer(Modifier.height(4.dp))
 
-                    Text(text = "$text мигрень", fontSize = 12.sp)
+                    Text(text = "$text ${stringResource(R.string.migraine)}", fontSize = 12.sp)
 
                     Text(
-                        text = "${migraine.durationMin} мин.",
+                        text = "${migraine.durationMin} ${stringResource(R.string.analytics_pan_unit)}",
                         style = MaterialTheme.typography.bodyLarge,
                         modifier = Modifier.padding(16.dp)
                     )

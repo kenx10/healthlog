@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Diário de Saúde</string>
+
+    <string name="app_history">Histórico</string>
+    <string name="app_analytics">Análises</string>
+    <string name="app_settings">Configurações</string>
+    <string name="app_about">Sobre o App</string>
+
+    <string name="app_about_part1">Manter um diário de saúde é um passo importante para o bem-estar e para entender melhor o seu corpo.</string>
+    <string name="app_about_part2">Este aplicativo foi criado exatamente para isso. Aqui você pode acompanhar facilmente enxaquecas, pressão arterial, níveis de açúcar no sangue e ataques de pânico.</string>
+    <string name="app_about_part3">O registro regular ajuda a identificar padrões, compreender melhor as reações do corpo e compartilhar informações importantes com o médico.</string>
+
+    <string name="save">Salvar</string>
+    <string name="saved">Salvo</string>
+    <string name="additional_info">Informações adicionais...</string>
+    <string name="duration">Duração</string>
+    <string name="sug_value_txt">Nível de açúcar (glicose)</string>
+
+    <string name="mig_reg">Registro de enxaqueca</string>
+
+    <string name="sug_reg">Açúcar no sangue</string>
+
+    <string name="pa_reg">Registro de ataque de pânico</string>
+    <string name="pa_trig">Descreva o gatilho externo...</string>
+
+    <string name="pres_reg">Registro de pressão arterial</string>
+    <string name="pres_up">Sistólica (superior)</string>
+    <string name="pres_down">Diastólica (inferior)</string>
+
+    <string name="analytics">Análises</string>
+    <string name="analytics_unit">pontos</string>
+    <string name="analytics_mig">Enxaquecas (força * tempo)</string>
+    <string name="analytics_pan">AP (total)</string>
+    <string name="analytics_pan_unit">min.</string>
+    <string name="analytics_sug">Açúcar</string>
+    <string name="analytics_sug_unit">mmol/L</string>
+    <string name="analytics_pres">Pressão</string>
+    <string name="analytics_pres_unit">mmHg</string>
+    <string name="analytics_nodata">Dados insuficientes</string>
+
+    <string name="history">Histórico de observações</string>
+    <string name="migraine">enxaqueca</string>
+    <string name="mig_weak">Fraca</string>
+    <string name="mig_millde">Média</string>
+    <string name="mig_strong">Forte</string>
+    <string name="mig_weak_desc">Fraca (não atrapalha as atividades diárias, sensação de desconforto)</string>
+    <string name="mig_millde_desc">Média (desconforto significativo, reduz a produtividade)</string>
+    <string name="mig_strong_desc">Forte (extremamente dolorosa, paralisa a atividade)</string>
+
+    <string name="personal_info">Informações pessoais</string>
+    <string name="your_name">Seu nome</string>
+    <string name="name">Nome</string>
+
+    <string name="permission_location">Considerar localização</string>
+    <string name="permission_location_decs">A permissão é necessária para registrar as coordenadas do incidente</string>
+    <string name="permission">Permissão necessária</string>
+    <string name="to_settings">Ir para configurações</string>
+    <string name="close">Fechar</string>
+
+    <string name="export_mig">Enxaquecas</string>
+    <string name="export_pres">Pressão</string>
+    <string name="export_sug">Açúcar</string>
+    <string name="export_pa">Ataques de pânico</string>
+
+    <string name="export_dt">Data e hora</string>
+    <string name="export_intence">Intensidade</string>
+    <string name="export_dur">Duração (min.)</string>
+    <string name="export_val">Valor (mmol/L)</string>
+    <string name="export_up">Superior (mmHg)</string>
+    <string name="export_down">Inferior (mmHg)</string>
+    <string name="export_comment">Comentário</string>
+
+    <string name="export_sfile">Enviar como arquivo</string>
+
+</resources>

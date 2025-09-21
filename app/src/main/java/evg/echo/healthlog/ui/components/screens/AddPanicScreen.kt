@@ -30,6 +30,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
@@ -52,6 +53,8 @@ fun AddPanicScreen(
     val commentMaxChars = 256
     val context = LocalContext.current
 
+    val savedStr = stringResource(R.string.saved)
+
     Scaffold(
         /* topBar = { AppBar(navController) } */
     ) { paddingValues ->
@@ -66,7 +69,7 @@ fun AddPanicScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "Регистрация панической атаки",
+                    text = stringResource(R.string.pa_reg),
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.primary,
@@ -100,7 +103,7 @@ fun AddPanicScreen(
                             Column {
                                 if (comment.isEmpty()) {
                                     Text(
-                                        "Опишите внешний триггер...",
+                                        stringResource(R.string.pa_trig),
                                         color = Color.Gray,
                                         style = MaterialTheme.typography.bodyLarge
                                     )
@@ -117,7 +120,7 @@ fun AddPanicScreen(
                     onClick = {
                         measureService.savePan(durationValue.toInt(), comment)
 
-                        Toast.makeText(context, "Сохранено", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, savedStr, Toast.LENGTH_SHORT).show()
                         navController.navigate(Routes.MAIN)
                     },
                     modifier = Modifier
@@ -133,7 +136,7 @@ fun AddPanicScreen(
                         pressedElevation = 4.dp
                     )
                 ) {
-                    Text("Записать", style = MaterialTheme.typography.labelLarge)
+                    Text(stringResource(R.string.save), style = MaterialTheme.typography.labelLarge)
                 }
             }
 

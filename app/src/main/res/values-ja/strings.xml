@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">健康日記</string>
+    <string name="app_history">履歴</string>
+    <string name="app_analytics">分析</string>
+    <string name="app_settings">設定</string>
+    <string name="app_about">アプリについて</string>
+
+    <string name="app_about_part1">健康日記をつけることは、より良い健康と自分の体を理解するための大切な一歩です。</string>
+    <string name="app_about_part2">このアプリはそのために作られました。片頭痛、血圧、血糖値、パニック発作を簡単に記録できます。</string>
+    <string name="app_about_part3">定期的な記録はパターンを特定し、体の反応をよりよく理解し、医師と重要な情報を共有するのに役立ちます。</string>
+
+    <string name="save">保存</string>
+    <string name="saved">保存しました</string>
+    <string name="additional_info">追加情報...</string>
+    <string name="duration">持続時間</string>
+    <string name="sug_value_txt">血糖値（グルコース）</string>
+
+    <string name="mig_reg">片頭痛の記録</string>
+    <string name="sug_reg">血糖</string>
+    <string name="pa_reg">パニック発作の記録</string>
+    <string name="pa_trig">外部トリガーを説明してください...</string>
+    <string name="pres_reg">血圧の記録</string>
+    <string name="pres_up">収縮期（上）</string>
+    <string name="pres_down">拡張期（下）</string>
+
+    <string name="analytics">分析</string>
+    <string name="analytics_unit">ポイント</string>
+    <string name="analytics_mig">片頭痛（強さ * 時間）</string>
+    <string name="analytics_pan">パニック発作（合計）</string>
+    <string name="analytics_pan_unit">分</string>
+    <string name="analytics_sug">血糖</string>
+    <string name="analytics_sug_unit">mmol/L</string>
+    <string name="analytics_pres">血圧</string>
+    <string name="analytics_pres_unit">mmHg</string>
+    <string name="analytics_nodata">データが不足しています</string>
+
+    <string name="history">観察履歴</string>
+    <string name="migraine">片頭痛</string>
+    <string name="mig_weak">軽度</string>
+    <string name="mig_millde">中等度</string>
+    <string name="mig_strong">重度</string>
+    <string name="mig_weak_desc">軽度（日常生活に支障なし、不快感あり）</string>
+    <string name="mig_millde_desc">中等度（顕著な不快感、生産性の低下）</string>
+    <string name="mig_strong_desc">重度（非常に痛く、活動を妨げる）</string>
+
+    <string name="personal_info">個人情報</string>
+    <string name="your_name">あなたの名前</string>
+    <string name="name">名前</string>
+
+    <string name="permission_location">位置情報を含める</string>
+    <string name="permission_location_decs">インシデントの座標を記録するには許可が必要です</string>
+    <string name="permission">許可が必要です</string>
+    <string name="to_settings">設定へ</string>
+    <string name="close">閉じる</string>
+
+    <string name="export_mig">偏頭痛</string>
+    <string name="export_pres">血圧</string>
+    <string name="export_sug">血糖</string>
+    <string name="export_pa">パニック発作</string>
+
+    <string name="export_dt">日付と時間</string>
+    <string name="export_intence">強さ</string>
+    <string name="export_dur">継続時間（分）</string>
+    <string name="export_val">値（mmol/L）</string>
+    <string name="export_up">収縮期（mmHg）</string>
+    <string name="export_down">拡張期（mmHg）</string>
+    <string name="export_comment">コメント</string>
+
+    <string name="export_sfile">ファイルとして送信</string>
+
+</resources>

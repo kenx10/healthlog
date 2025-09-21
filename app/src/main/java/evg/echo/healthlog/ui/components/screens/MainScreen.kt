@@ -29,6 +29,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import evg.echo.healthlog.R
@@ -137,14 +138,14 @@ fun MainScreen(
                         horizontalArrangement = Arrangement.SpaceEvenly
                     ) {
                         MenuButton(
-                            title = "История",
+                            title = stringResource(R.string.app_history),
                             icon = Icons.AutoMirrored.Outlined.List,
                             color = Color(0xFF4CAF50), // Зеленый
                             onClick = { navController.navigate(Routes.HISTORY) }
                         )
 
                         MenuButton(
-                            title = "Аналитика",
+                            title = stringResource(R.string.app_analytics),
                             icon = Icons.Default.Share,
                             color = Color(0xFF2196F3), // Синий
                             onClick = { navController.navigate(Routes.ANALYTICS) }
@@ -159,14 +160,14 @@ fun MainScreen(
                         horizontalArrangement = Arrangement.SpaceEvenly
                     ) {
                         MenuButton(
-                            title = "Настройки",
+                            title = stringResource(R.string.app_settings),
                             icon = Icons.Default.Settings,
                             color = Color(0xFFFF9800), // Оранжевый
                             onClick = { navController.navigate(Routes.PERSONALISATION) }
                         )
 
                         MenuButton(
-                            title = "О программе",
+                            title = stringResource(R.string.app_about),
                             icon = Icons.Default.Info,
                             color = Color(0xFF9C27B0), // Фиолетовый
                             onClick = { navController.navigate(Routes.ABOUT) }

@@ -15,10 +15,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import evg.echo.healthlog.R
 import evg.echo.healthlog.ui.components.widgets.AppBar
 import evg.echo.healthlog.ui.components.widgets.analytics.OneValColumnChart
 import evg.echo.healthlog.ui.components.widgets.analytics.TwoValColumnChart
@@ -33,7 +35,7 @@ fun AnalyticsScreen(
     analyticsViewModel: AnalyticsViewModel = koinInject<AnalyticsViewModel>()
 ) {
     Scaffold(
-        topBar = { AppBar(navController, text = "Аналитика") }
+        topBar = { AppBar(navController, text = stringResource(R.string.app_analytics)) }
     ) { paddingValues ->
 
         Box(
@@ -46,7 +48,7 @@ fun AnalyticsScreen(
                     .verticalScroll(rememberScrollState())
             ) {
                 Text(
-                    text = "Мигрени (сила * время)",
+                    text = stringResource(R.string.analytics_mig),
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.padding(bottom = 4.dp)
@@ -59,7 +61,7 @@ fun AnalyticsScreen(
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
-                            text = "Данных недостаточно",
+                            text = stringResource(R.string.analytics_nodata),
                             textAlign = TextAlign.Center,
                             fontSize = 20.sp,
                             color = MaterialTheme.colorScheme.secondary
@@ -78,7 +80,7 @@ fun AnalyticsScreen(
                 Spacer(Modifier.height(16.dp))
 
                 Text(
-                    text = "ПА (суммарно)",
+                    text = stringResource(R.string.analytics_pan),
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.padding(bottom = 4.dp)
@@ -91,7 +93,7 @@ fun AnalyticsScreen(
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
-                            text = "Данных недостаточно",
+                            text = stringResource(R.string.analytics_nodata),
                             textAlign = TextAlign.Center,
                             fontSize = 20.sp,
                             color = MaterialTheme.colorScheme.secondary
@@ -105,13 +107,13 @@ fun AnalyticsScreen(
                             return@OneValColumnChart toDateFormat(it)
                         },
                         y = analyticsViewModel.pan,
-                        ySuff = "мин."
+                        ySuff = stringResource(R.string.analytics_pan_unit)
                     )
                 }
                 Spacer(Modifier.height(16.dp))
 
                 Text(
-                    text = "Сахар",
+                    text = stringResource(R.string.analytics_sug),
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.padding(bottom = 4.dp)
@@ -124,7 +126,7 @@ fun AnalyticsScreen(
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
-                            text = "Данных недостаточно",
+                            text = stringResource(R.string.analytics_nodata),
                             textAlign = TextAlign.Center,
                             fontSize = 20.sp,
                             color = MaterialTheme.colorScheme.secondary
@@ -138,13 +140,13 @@ fun AnalyticsScreen(
                         timeMillsFormatter = {
                             return@OneValColumnChart toDateTimeFormat(it)
                         },
-                        ySuff = "ммоль/л"
+                        ySuff = stringResource(R.string.analytics_sug_unit)
                     )
                 }
                 Spacer(Modifier.height(16.dp))
 
                 Text(
-                    text = "Давление",
+                    text = stringResource(R.string.analytics_pres),
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.padding(bottom = 4.dp)
@@ -157,7 +159,7 @@ fun AnalyticsScreen(
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
-                            text = "Данных недостаточно",
+                            text = stringResource(R.string.analytics_nodata),
                             textAlign = TextAlign.Center,
                             fontSize = 20.sp,
                             color = MaterialTheme.colorScheme.secondary
@@ -169,14 +171,14 @@ fun AnalyticsScreen(
                             Color(0xFF673AB7),
                             Color(0xff3490de)
                         ),
-                        legendNames = linkedSetOf("Диастолическое", "Систолическое"),
+                        legendNames = linkedSetOf(stringResource(R.string.pres_down), stringResource(R.string.pres_up)),
                         timeMills = analyticsViewModel.presDT,
                         y1 = analyticsViewModel.presL,
                         y2 = analyticsViewModel.presDif,
                         timeMillsFormatter = {
                             return@TwoValColumnChart toDateTimeFormat(it)
                         },
-                        ySuff = "мм рт. ст."
+                        ySuff = stringResource(R.string.analytics_pres_unit)
                     )
                 }
             }

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Дневник здоровья</string>
+
+    <string name="app_history">История</string>
+    <string name="app_analytics">Аналитика</string>
+    <string name="app_settings">Настройки</string>
+    <string name="app_about">О программе</string>
+
+    <string name="app_about_part1">Ведение дневника здоровья — это важный шаг к лучшему самочувствию и пониманию своего организма.</string>
+    <string name="app_about_part2">Это приложение создано как раз для этого. Здесь вы можете удобно отслеживать мигрени, уровень артериального давления, сахара в крови, а также панические атаки.</string>
+    <string name="app_about_part3">Регулярный учет помогает выявлять закономерности, лучше понимать реакции организма и делиться важной информацией с врачом.</string>
+
+    <string name="save">Записать</string>
+    <string name="saved">Сохранено</string>
+    <string name="additional_info">Дополнительная информация...</string>
+    <string name="duration">Продолжительность</string>
+    <string name="sug_value_txt">Уровень сахара (глюкозы)</string>
+
+    <string name="mig_reg">Регистрация случая мигрени</string>
+
+    <string name="sug_reg">Сахар в крови</string>
+
+    <string name="pa_reg">Регистрация панической атаки</string>
+    <string name="pa_trig">Опишите внешний триггер...</string>
+
+    <string name="pres_reg">Регистрация артериального давления</string>
+    <string name="pres_up">Систолическое (верхнее)</string>
+    <string name="pres_down">Диастолическое (нижнее)</string>
+
+    <string name="analytics">Аналитика</string>
+    <string name="analytics_unit">баллов</string>
+    <string name="analytics_mig">Мигрени (сила * время)</string>
+    <string name="analytics_pan">ПА (суммарно)</string>
+    <string name="analytics_pan_unit">мин.</string>
+    <string name="analytics_sug">Сахар</string>
+    <string name="analytics_sug_unit">ммоль/л</string>
+    <string name="analytics_pres">Давление</string>
+    <string name="analytics_pres_unit">мм рт. ст.</string>
+    <string name="analytics_nodata">Данных недостаточно</string>
+
+    <string name="history">История наблюдений</string>
+    <string name="migraine">мигрень</string>
+    <string name="mig_weak">Слабая</string>
+    <string name="mig_millde">Средняя</string>
+    <string name="mig_strong">Сильная</string>
+    <string name="mig_weak_desc">Слабая (не мешает выполнять повседневные дела, ощущается дискомфорт)</string>
+    <string name="mig_millde_desc">Средняя (выраженный дискомфорт, снижает продуктивность)</string>
+    <string name="mig_strong_desc">Сильная (крайне болезненно, парализует активность)</string>
+
+    <string name="personal_info">Персональные данные</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="name">Имя</string>
+
+    <string name="permission_location">Учитывать местоположение</string>
+    <string name="permission_location_decs">Разрешение нужно для регистрации координат инцидента</string>
+    <string name="permission">Требуется разрешение</string>
+    <string name="to_settings">В настройки</string>
+    <string name="close">Закрыть</string>
+
+
+    <string name="export_mig">Мигрени</string>
+    <string name="export_pres">Давление</string>
+    <string name="export_sug">Сахар</string>
+    <string name="export_pa">Панические атаки</string>
+
+    <string name="export_dt">Дата и время</string>
+    <string name="export_intence">Интенсивность</string>
+    <string name="export_dur">Продолжительность (мин.)</string>
+    <string name="export_val">Значение (ммоль/л)</string>
+    <string name="export_up">Верхнее (мм. рт. ст.)</string>
+    <string name="export_down">Нижнее (мм. рт. ст.)</string>
+    <string name="export_comment">Комментарий</string>
+
+    <string name="export_sfile">Отправить как файл</string>
+</resources>

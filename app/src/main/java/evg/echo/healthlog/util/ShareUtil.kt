@@ -4,22 +4,25 @@ import android.content.Context
 import android.content.Intent
 import android.util.Log
 import androidx.core.content.FileProvider
+import evg.echo.healthlog.R
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
 import java.io.OutputStreamWriter
 
 fun sendData(context: Context, measureContainer: MeasureContainer) {
+
+
     val csvBuffer = StringBuffer()
 
     /////////
-    csvBuffer.append("Мигрени")
+    csvBuffer.append(context.getString(R.string.export_mig))
     csvBuffer.append('\n')
 
-    csvBuffer.append("Дата и время;")
-    csvBuffer.append("Интенсивность;")
-    csvBuffer.append("Продолжительность (мин.);")
-    csvBuffer.append("Комментарий;")
+    csvBuffer.append("${context.getString(R.string.export_dt)} ;")
+    csvBuffer.append("${context.getString(R.string.export_intence)} ;")
+    csvBuffer.append("${context.getString(R.string.export_dur)} ;")
+    csvBuffer.append("${context.getString(R.string.export_comment)} ;")
     csvBuffer.append('\n')
 
     measureContainer.migraines.forEach {
@@ -27,9 +30,9 @@ fun sendData(context: Context, measureContainer: MeasureContainer) {
         csvBuffer.append(';')
 
         when (it.value) {
-            1 -> csvBuffer.append("Слабая")
-            2 -> csvBuffer.append("Средняя")
-            3 -> csvBuffer.append("Сильная")
+            1 -> csvBuffer.append(context.getString(R.string.mig_weak))
+            2 -> csvBuffer.append(context.getString(R.string.mig_millde))
+            3 -> csvBuffer.append(context.getString(R.string.mig_strong))
         }
         csvBuffer.append(';')
 
@@ -45,13 +48,13 @@ fun sendData(context: Context, measureContainer: MeasureContainer) {
 
     /////////
     csvBuffer.append('\n')
-    csvBuffer.append("Давление")
+    csvBuffer.append(context.getString(R.string.export_pres))
     csvBuffer.append('\n')
 
-    csvBuffer.append("Дата и время;")
-    csvBuffer.append("Верхнее (мм. рт. ст.);")
-    csvBuffer.append("Нижнее (мм. рт. ст.);")
-    csvBuffer.append("Комментарий;")
+    csvBuffer.append("${context.getString(R.string.export_dt)} ;")
+    csvBuffer.append("${context.getString(R.string.export_up)} ;")
+    csvBuffer.append("${context.getString(R.string.export_down)} ;")
+    csvBuffer.append("${context.getString(R.string.export_comment)} ;")
     csvBuffer.append('\n')
 
     measureContainer.pressures.forEach {
@@ -73,12 +76,12 @@ fun sendData(context: Context, measureContainer: MeasureContainer) {
 
     /////////
     csvBuffer.append('\n')
-    csvBuffer.append("Сахар")
+    csvBuffer.append(context.getString(R.string.export_sug))
     csvBuffer.append('\n')
 
-    csvBuffer.append("Дата и время;")
-    csvBuffer.append("Значение (ммоль/л);")
-    csvBuffer.append("Комментарий;")
+    csvBuffer.append("${context.getString(R.string.export_dt)} ;")
+    csvBuffer.append("${context.getString(R.string.export_val)} ;")
+    csvBuffer.append("${context.getString(R.string.export_comment)} ;")
     csvBuffer.append('\n')
 
     measureContainer.sugars.forEach {
@@ -97,12 +100,12 @@ fun sendData(context: Context, measureContainer: MeasureContainer) {
 
     /////////
     csvBuffer.append('\n')
-    csvBuffer.append("ПА")
+    csvBuffer.append(context.getString(R.string.export_pa))
     csvBuffer.append('\n')
 
-    csvBuffer.append("Дата и время;")
-    csvBuffer.append("Продолжительность (мин.);")
-    csvBuffer.append("Комментарий;")
+    csvBuffer.append("${context.getString(R.string.export_dt)} ;")
+    csvBuffer.append("${context.getString(R.string.export_dur)} ;")
+    csvBuffer.append("${context.getString(R.string.export_comment)} ;")
     csvBuffer.append('\n')
 
     measureContainer.panics.forEach {
@@ -138,7 +141,7 @@ fun sendData(context: Context, measureContainer: MeasureContainer) {
         share.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION and Intent.FLAG_ACTIVITY_NEW_TASK)
         share.setType("text/csv")
         share.putExtra(Intent.EXTRA_STREAM, uri)
-        context.startActivity(Intent.createChooser(share, "Отправить как файл"))
+        context.startActivity(Intent.createChooser(share, context.getString(R.string.export_sfile)))
     } catch (e: Exception) {
         throw RuntimeException(e)
     }

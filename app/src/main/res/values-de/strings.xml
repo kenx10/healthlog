@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Gesundheitstagebuch</string>
+
+    <string name="app_history">Verlauf</string>
+    <string name="app_analytics">Analytik</string>
+    <string name="app_settings">Einstellungen</string>
+    <string name="app_about">Über</string>
+
+    <string name="app_about_part1">Das Führen eines Gesundheitstagebuchs ist ein wichtiger Schritt zu mehr Wohlbefinden und einem besseren Verständnis des eigenen Körpers.</string>
+    <string name="app_about_part2">Diese App wurde genau dafür entwickelt. Hier können Sie Migräne, Blutdruck, Blutzuckerspiegel sowie Panikattacken bequem verfolgen.</string>
+    <string name="app_about_part3">Regelmäßige Aufzeichnungen helfen, Muster zu erkennen, die Reaktionen des Körpers besser zu verstehen und wichtige Informationen mit dem Arzt zu teilen.</string>
+
+    <string name="save">Speichern</string>
+    <string name="saved">Gespeichert</string>
+    <string name="additional_info">Zusätzliche Informationen...</string>
+    <string name="duration">Dauer</string>
+    <string name="sug_value_txt">Blutzuckerspiegel (Glukose)</string>
+
+    <string name="mig_reg">Migräne-Eintrag</string>
+    <string name="sug_reg">Blutzucker</string>
+    <string name="pa_reg">Panikattacke-Eintrag</string>
+    <string name="pa_trig">Beschreiben Sie den Auslöser...</string>
+    <string name="pres_reg">Blutdruck-Eintrag</string>
+    <string name="pres_up">Systolisch (oberer Wert)</string>
+    <string name="pres_down">Diastolisch (unterer Wert)</string>
+
+    <string name="analytics">Analytik</string>
+    <string name="analytics_unit">Punkte</string>
+    <string name="analytics_mig">Migräne (Stärke * Zeit)</string>
+    <string name="analytics_pan">Panikattacken (gesamt)</string>
+    <string name="analytics_pan_unit">Min.</string>
+    <string name="analytics_sug">Blutzucker</string>
+    <string name="analytics_sug_unit">mmol/L</string>
+    <string name="analytics_pres">Blutdruck</string>
+    <string name="analytics_pres_unit">mmHg</string>
+    <string name="analytics_nodata">Nicht genügend Daten</string>
+
+    <string name="history">Beobachtungsverlauf</string>
+    <string name="migraine">Migräne</string>
+    <string name="mig_weak">Leicht</string>
+    <string name="mig_millde">Mittel</string>
+    <string name="mig_strong">Stark</string>
+    <string name="mig_weak_desc">Leicht (beeinträchtigt den Alltag nicht, spürbares Unbehagen)</string>
+    <string name="mig_millde_desc">Mittel (deutliches Unbehagen, verringert Produktivität)</string>
+    <string name="mig_strong_desc">Stark (sehr schmerzhaft, lähmt Aktivität)</string>
+
+    <string name="personal_info">Persönliche Daten</string>
+    <string name="your_name">Ihr Name</string>
+    <string name="name">Name</string>
+
+    <string name="permission_location">Standort erfassen</string>
+    <string name="permission_location_decs">Die Berechtigung wird benötigt, um Vorfallkoordinaten zu speichern</string>
+    <string name="permission">Berechtigung erforderlich</string>
+    <string name="to_settings">Zu den Einstellungen</string>
+    <string name="close">Schließen</string>
+
+    <string name="export_mig">Migräne</string>
+    <string name="export_pres">Blutdruck</string>
+    <string name="export_sug">Zucker</string>
+    <string name="export_pa">Panikattacken</string>
+
+    <string name="export_dt">Datum und Uhrzeit</string>
+    <string name="export_intence">Intensität</string>
+    <string name="export_dur">Dauer (Min.)</string>
+    <string name="export_val">Wert (mmol/L)</string>
+    <string name="export_up">Systolisch (mmHg)</string>
+    <string name="export_down">Diastolisch (mmHg)</string>
+    <string name="export_comment">Kommentar</string>
+
+    <string name="export_sfile">Als Datei senden</string>
+
+</resources>

@@ -30,8 +30,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
+import evg.echo.healthlog.R
 import evg.echo.healthlog.services.UserService
 import kotlinx.coroutines.launch
 import org.koin.compose.koinInject
@@ -58,7 +60,7 @@ fun LocationPermissionSwitch(
     }
 
     val permissionLauncher =
-        permissionLauncher("Разрешение нужно для регистрации координат инцидента") {
+        permissionLauncher(stringResource(R.string.permission_location_decs)) {
             granted = true
         }
 
@@ -87,7 +89,7 @@ fun LocationPermissionSwitch(
         Spacer(modifier = Modifier.padding(start = 8.dp))
         Text(
             modifier = Modifier.weight(1f),
-            text = "Учитывать местоположение"
+            text = stringResource(R.string.permission_location)
         )
         Spacer(modifier = Modifier.padding(start = 8.dp))
         IconButton(
@@ -117,7 +119,7 @@ fun permissionLauncher(
     if (showDialog) {
         AlertDialog(
             onDismissRequest = { showDialog = false },
-            title = { Text("Требуется разрешение") },
+            title = { Text(stringResource(R.string.permission)) },
             text = { Text(notGrantedMsg) },
             confirmButton = {
                 Button(onClick = {
@@ -129,12 +131,12 @@ fun permissionLauncher(
                     }
                     context.startActivity(intent)
                 }) {
-                    Text("В настройки")
+                    Text(stringResource(R.string.to_settings))
                 }
             },
             dismissButton = {
                 Button(onClick = { showDialog = false }) {
-                    Text("Закрыть")
+                    Text(stringResource(R.string.close))
                 }
             }
         )

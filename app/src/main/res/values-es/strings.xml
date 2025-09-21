@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Diario de Salud</string>
+    <string name="app_history">Historial</string>
+    <string name="app_analytics">Analítica</string>
+    <string name="app_settings">Ajustes</string>
+    <string name="app_about">Acerca de</string>
+
+    <string name="app_about_part1">Llevar un diario de salud es un paso importante hacia un mayor bienestar y comprensión de tu cuerpo.</string>
+    <string name="app_about_part2">Esta aplicación está diseñada justamente para eso. Aquí puedes registrar migrañas, presión arterial, niveles de azúcar en sangre y ataques de pánico.</string>
+    <string name="app_about_part3">El registro regular ayuda a identificar patrones, comprender mejor las reacciones del cuerpo y compartir información importante con el médico.</string>
+
+    <string name="save">Guardar</string>
+    <string name="saved">Guardado</string>
+    <string name="additional_info">Información adicional...</string>
+    <string name="duration">Duración</string>
+    <string name="sug_value_txt">Nivel de glucosa en sangre</string>
+
+    <string name="mig_reg">Registro de migraña</string>
+    <string name="sug_reg">Azúcar en sangre</string>
+    <string name="pa_reg">Registro de ataque de pánico</string>
+    <string name="pa_trig">Describe el desencadenante...</string>
+    <string name="pres_reg">Registro de presión arterial</string>
+    <string name="pres_up">Sistólica (alta)</string>
+    <string name="pres_down">Diastólica (baja)</string>
+
+    <string name="analytics">Analítica</string>
+    <string name="analytics_unit">puntos</string>
+    <string name="analytics_mig">Migrañas (intensidad * tiempo)</string>
+    <string name="analytics_pan">Ataques de pánico (total)</string>
+    <string name="analytics_pan_unit">min.</string>
+    <string name="analytics_sug">Azúcar en sangre</string>
+    <string name="analytics_sug_unit">mmol/L</string>
+    <string name="analytics_pres">Presión arterial</string>
+    <string name="analytics_pres_unit">mmHg</string>
+    <string name="analytics_nodata">Datos insuficientes</string>
+
+    <string name="history">Historial de observaciones</string>
+    <string name="migraine">migraña</string>
+    <string name="mig_weak">Leve</string>
+    <string name="mig_millde">Moderada</string>
+    <string name="mig_strong">Severa</string>
+    <string name="mig_weak_desc">Leve (no interfiere con las actividades diarias, malestar perceptible)</string>
+    <string name="mig_millde_desc">Moderada (malestar significativo, reduce la productividad)</string>
+    <string name="mig_strong_desc">Severa (muy dolorosa, paraliza la actividad)</string>
+
+    <string name="personal_info">Datos personales</string>
+    <string name="your_name">Tu nombre</string>
+    <string name="name">Nombre</string>
+
+    <string name="permission_location">Incluir ubicación</string>
+    <string name="permission_location_decs">Se requiere permiso para registrar las coordenadas del incidente</string>
+    <string name="permission">Permiso requerido</string>
+    <string name="to_settings">Ir a ajustes</string>
+    <string name="close">Cerrar</string>
+
+    <string name="export_mig">Migrañas</string>
+    <string name="export_pres">Presión</string>
+    <string name="export_sug">Azúcar</string>
+    <string name="export_pa">Ataques de pánico</string>
+
+    <string name="export_dt">Fecha y hora</string>
+    <string name="export_intence">Intensidad</string>
+    <string name="export_dur">Duración (min.)</string>
+    <string name="export_val">Valor (mmol/L)</string>
+    <string name="export_up">Sistólica (mmHg)</string>
+    <string name="export_down">Diastólica (mmHg)</string>
+    <string name="export_comment">Comentario</string>
+
+    <string name="export_sfile">Enviar como archivo</string>
+
+</resources>

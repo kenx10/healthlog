@@ -29,9 +29,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import evg.echo.healthlog.R
 import evg.echo.healthlog.services.MeasureService
 import evg.echo.healthlog.ui.components.Routes
 import evg.echo.healthlog.ui.components.widgets.sliders.SugarSlider
@@ -49,6 +51,8 @@ fun AddSugarScreen(
     val commentMaxChars = 256
     val context = LocalContext.current
 
+    val savedStr = stringResource(R.string.saved)
+
     Scaffold(
         /* topBar = { AppBar(navController) } */
     ) { paddingValues ->
@@ -63,7 +67,7 @@ fun AddSugarScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "Сахар в крови",
+                    text = stringResource(R.string.sug_reg),
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.primary,
@@ -96,7 +100,7 @@ fun AddSugarScreen(
                             Column {
                                 if (comment.isEmpty()) {
                                     Text(
-                                        "Дополнительная информация...",
+                                        stringResource(R.string.additional_info),
                                         color = Color.Gray,
                                         style = MaterialTheme.typography.bodyLarge
                                     )
@@ -113,7 +117,7 @@ fun AddSugarScreen(
                     onClick = {
                         // save
                         measureService.saveSug(sugarValue, comment)
-                        Toast.makeText(context, "Сохранено", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, savedStr, Toast.LENGTH_SHORT).show()
                         navController.navigate(Routes.MAIN)
                     },
                     modifier = Modifier
@@ -129,7 +133,7 @@ fun AddSugarScreen(
                         pressedElevation = 4.dp
                     )
                 ) {
-                    Text("Записать", style = MaterialTheme.typography.labelLarge)
+                    Text(stringResource(R.string.save), style = MaterialTheme.typography.labelLarge)
                 }
             }
 

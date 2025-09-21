@@ -17,10 +17,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import evg.echo.healthlog.R
 import evg.echo.healthlog.model.ent.Pressure
 
 @Composable
@@ -65,7 +67,7 @@ fun PressureCard(
                     Spacer(Modifier.height(4.dp))
 
                     Text(
-                        text = "Давление\n(мм рт. ст.)",
+                        text = "${stringResource(R.string.analytics_pres)}\n(${stringResource(R.string.analytics_pres_unit)})",
                         fontSize = 12.sp,
                         textAlign = TextAlign.Center
                     )

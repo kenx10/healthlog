@@ -17,9 +17,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import evg.echo.healthlog.R
 import evg.echo.healthlog.model.ent.Panic
 
 @Composable
@@ -65,7 +67,7 @@ fun PanicCard(
                     Text(text = "ПА", fontSize = 12.sp)
 
                     Text(
-                        text = "${panic.durationMin} мин.",
+                        text = "${panic.durationMin} ${stringResource(R.string.analytics_pan_unit)}",
                         style = MaterialTheme.typography.bodyLarge,
                         modifier = Modifier.padding(16.dp)
                     )

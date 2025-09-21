@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Diario della Salute</string>
+    <string name="app_history">Storico</string>
+    <string name="app_analytics">Analisi</string>
+    <string name="app_settings">Impostazioni</string>
+    <string name="app_about">Informazioni</string>
+
+    <string name="app_about_part1">Tenere un diario della salute è un passo importante verso un maggiore benessere e una migliore comprensione del proprio corpo.</string>
+    <string name="app_about_part2">Questa applicazione è stata creata proprio per questo. Qui puoi monitorare facilmente emicranie, pressione arteriosa, livelli di zucchero nel sangue e attacchi di panico.</string>
+    <string name="app_about_part3">Un monitoraggio regolare aiuta a identificare schemi, comprendere meglio le reazioni del corpo e condividere informazioni importanti con il medico.</string>
+
+    <string name="save">Salva</string>
+    <string name="saved">Salvato</string>
+    <string name="additional_info">Informazioni aggiuntive...</string>
+    <string name="duration">Durata</string>
+    <string name="sug_value_txt">Livello di zucchero (glucosio) nel sangue</string>
+
+    <string name="mig_reg">Registrazione emicrania</string>
+    <string name="sug_reg">Zucchero nel sangue</string>
+    <string name="pa_reg">Registrazione attacco di panico</string>
+    <string name="pa_trig">Descrivi il fattore scatenante...</string>
+    <string name="pres_reg">Registrazione pressione arteriosa</string>
+    <string name="pres_up">Sistolica (alta)</string>
+    <string name="pres_down">Diastolica (bassa)</string>
+
+    <string name="analytics">Analisi</string>
+    <string name="analytics_unit">punti</string>
+    <string name="analytics_mig">Emicranie (intensità * tempo)</string>
+    <string name="analytics_pan">Attacchi di panico (totale)</string>
+    <string name="analytics_pan_unit">min.</string>
+    <string name="analytics_sug">Zucchero nel sangue</string>
+    <string name="analytics_sug_unit">mmol/L</string>
+    <string name="analytics_pres">Pressione arteriosa</string>
+    <string name="analytics_pres_unit">mmHg</string>
+    <string name="analytics_nodata">Dati insufficienti</string>
+
+    <string name="history">Storico osservazioni</string>
+    <string name="migraine">emicrania</string>
+    <string name="mig_weak">Lieve</string>
+    <string name="mig_millde">Moderata</string>
+    <string name="mig_strong">Grave</string>
+    <string name="mig_weak_desc">Lieve (non interferisce con le attività quotidiane, lieve disagio)</string>
+    <string name="mig_millde_desc">Moderata (disagio significativo, riduce la produttività)</string>
+    <string name="mig_strong_desc">Grave (molto dolorosa, paralizza l`attività)</string>
+
+    <string name="personal_info">Dati personali</string>
+    <string name="your_name">Il tuo nome</string>
+    <string name="name">Nome</string>
+
+    <string name="permission_location">Includi posizione</string>
+    <string name="permission_location_decs">Il permesso è necessario per registrare le coordinate dell`incidente</string>
+    <string name="permission">Permesso richiesto</string>
+    <string name="to_settings">Vai alle impostazioni</string>
+    <string name="close">Chiudi</string>
+
+    <string name="export_mig">Emicrania</string>
+    <string name="export_pres">Pressione</string>
+    <string name="export_sug">Zucchero</string>
+    <string name="export_pa">Attacchi di panico</string>
+
+    <string name="export_dt">Data e ora</string>
+    <string name="export_intence">Intensità</string>
+    <string name="export_dur">Durata (min.)</string>
+    <string name="export_val">Valore (mmol/L)</string>
+    <string name="export_up">Sistolica (mmHg)</string>
+    <string name="export_down">Diastolica (mmHg)</string>
+    <string name="export_comment">Commento</string>
+
+    <string name="export_sfile">Invia come file</string>
+
+</resources>
